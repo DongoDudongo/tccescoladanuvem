@@ -1,0 +1,321 @@
+ @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
+  list-style: none;
+box-sizing: border-box;
+}
+body {
+  background-color:  #0A0A2A;
+  height: 100vh;
+}
+nav {
+	background: linear-gradient(#5434af , #1d075f) ;
+	height: 80px;
+	width: 100%;
+  
+}
+
+
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #1d075f;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  
+}
+#check {
+	display: none;
+}
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  
+  
+  }
+
+  
+  section{
+    z-index: -2;
+  }
+
+    main {
+        margin-top: 15px;
+      
+    }
+
+    .texto {
+      position: relative;
+      margin-top: 10px;
+      color: white;
+      font-size: 3.5vw;
+      letter-spacing: 1px;
+      text-align: center;
+      z-index: -2;
+    }
+
+   .texto1 {
+        position: relative;
+        margin-top: 10px;
+        color: white;
+        font-size: 3vw;
+        letter-spacing: 1px;
+        text-align: center;
+        z-index: -2;
+      }
+
+      
+      .secondSection {
+        position: relative;
+        top: 2vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+       
+      }
+
+      .curriculos {
+        width: 45vw;
+        height: 60vw;
+      }
+      
+      .photoDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+      }
+
+      
+
+      .linkedin {
+        width: 5vw;
+        height: 5vw;
+        cursor: pointer;
+      }
+      
+      .linkedin:hover {
+        transform: scale(110%);
+      }
+      h2 {
+        position: relative;
+        color: #e2e1e0;
+        font-size: 1.88vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      footer {
+        margin-top: 20px;
+        width: 100%;
+        color: #dcd5e7;
+      }
+
+      #footer_content {
+        background: linear-gradient(#1d075f , #5434af );
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 3rem 3.5rem;
+      }
+
+      .escolanuvem{
+        height: 15vh;
+      }
+
+      .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+    }
+     
+    .footer-list .footer-link {
+      color: #f7f2f2;
+      transition: all 0.4s;
+  }
+      @media (max-width: 952px){
+        label.logo{
+          font-size: 20px;
+          padding-left: 5px;
+          align-items: center;
+          justify-content: center;
+          margin-left: 10px;
+        }
+        nav ul li a{
+          font-size: 16px;
+        }
+             .checkbtn {
+          display: block;
+          
+        }
+        ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #1d075f;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+        nav ul li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a {
+          font-size: 20px;
+        }
+        a:hover, a.active {
+          background: none;
+          
+        }
+        #check:checked ~ ul {
+          left: 0;
+        }
+        .containercurriculo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          
+        }
+       .organizar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+       }
+
+       #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+      }
+
+
+      @media (max-width: 858px){
+        .checkbtn {
+          display: block;
+        }
+        ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #1d075f;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+        nav ul li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a {
+          font-size: 20px;
+        }
+        a:hover, a.active {
+          background: none;
+        
+        }
+        #check:checked ~ ul {
+          left: 0;
+        }
+
+        h2 {
+          position:relative ;
+          color: #FE642E;
+          font-size: 2.88vw;
+          align-items: center;
+          justify-content: center;
+          margin-left: 5px;
+        }
+     main {
+          margin-top: 5px;
+      }
+  
+      .texto1 {
+          font-size: 4vw;
+          max-width: 90vw;
+        }
+  
+        .linkedin {
+          width: 15vw;
+          height: 15vw;
+        }
+      
+      
+  
+        .secondSection .curriculos {
+          width: 85vw;
+          height: auto;
+       
+      }
+
+      .containercurriculo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+      }
+     .organizar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     #footer_content {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3rem 2rem;
+  }
+      }
